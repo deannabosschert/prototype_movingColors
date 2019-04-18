@@ -35,7 +35,7 @@ p {
   background-color: white;
   width: 400px;
   height: 200px;
-  margin-top: 5%;
+  margin-top: 25%;
   margin-right: -40%;
   float: right;
   animation: move 3s linear infinite;
