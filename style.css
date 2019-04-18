@@ -1,83 +1,75 @@
-	html {
-    padding: 0;
-    margin: 0;
-    max-height: 100%;
-    max-width: 100%;
-    overflow: hidden;
-    font-family: sans-serif;
-	}
+html {
+  padding: 0;
+  margin: 0;
+  max-height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  font-family: sans-serif;
+}
 
-	body {
-		 background: black;
-     display: flex;
-		 color: grey;
-	}
+body {
+  background: black;
+  display: flex;
+  color: grey;
+}
 
-  main{
-    margin-left: 25%;
-    margin-right: 25%;
-    max-width: 50%;
-    text-align: center;
+main {
+  margin-left: 25%;
+  margin-right: 25%;
+  max-width: 50%;
+  text-align: center;
+}
+
+h1 {
+}
+
+h2 {
+  margin-top: -2%;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.block {
+  background-color: white;
+  width: 400px;
+  height: 200px;
+  margin-top: 5%;
+  margin-right: -40%;
+  float: right;
+  animation: move 3s linear infinite;
+  animation-delay: 0.25s;
+  /* animation-iteration-count: 2; */
+}
+
+.block:hover {
+  animation: wavinghover 8s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0%, 0%);
   }
-
-  h1{
-
+  25% {
+    transform: translate(-50%, 0%);
   }
-
-  h2{
-    margin-top: -2%;
-
+  50% {
+    transform: translate(-95%, 0%);
   }
-
-  p{
-    font-size: 1.2rem;
+  75% {
+    transform: translate(-175%, 0%);
   }
+  100% {
+    transform: translate(-400%, 0%);
+  }
+}
 
-  .screenreader{
-		position:absolute;
-		left:-10000px;
-		top:auto;
-		width:1px;
-		height:1px;
-		overflow:hidden;
-	}
-
-  .boat {
-    width: 60%;
-    padding-left: 100%;
-    padding-right: 100%;
-    margin-top: 5%;
-    animation: move 8s linear infinite;
-		animation-delay:0.25s;
-    /* animation-iteration-count: 2; */
-		}
-
-		.block{
-			background-color: white;
-			width: 400px;
-			height: 200px;
-			margin-top: 5%;
-			margin-right: -40%;
-			float: right;
-			animation: move 3s linear infinite;
-			animation-delay:0.25s;
-			/* animation-iteration-count: 2; */
-		}
-
-    .block:hover {
-      animation: wavinghover 8s infinite;
-  		}
-
-
-    @keyframes move{
-      0% {transform:translate(0%,0%)}
-      25% {transform:translate(-50%,0%)}
-      50% {transform:translate(-95%, 0%)}
-      75% {transform:translate(-175%,0%)}
-      100%{transform:translate(-400%,0%)}
-      }
-
-      @keyframes movehover{
-        0% {transform:translate(-32.5%,0%)}
-        100%{transform:translate(-32.5%,0%)}
-        }
+@keyframes movehover {
+  0% {
+    transform: translate(-32.5%, 0%);
+  }
+  100% {
+    transform: translate(-32.5%, 0%);
+  }
+}
